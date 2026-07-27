@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Guia de Estudo — Lei nº 12.305/2010 (Política Nacional de Resíduos Sólidos)</title>
+<style>
+  :root{
+    --verde-escuro:#1f5c3c;
+    --verde-claro:#e7f3ec;
+    --dourado:#b8860b;
+    --cinza:#4a4a4a;
+    --alerta:#8a1f11;
+    --alerta-bg:#fdecea;
+    --azul:#0b3d63;
+    --azul-bg:#eaf1f7;
+  }
+  body{
+    font-family: Georgia, 'Times New Roman', serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    line-height: 1.6;
+    color:#1c1c1c;
+    background:#fffefb;
+  }
+  h1{
+    color: var(--verde-escuro);
+    font-size: 1.9em;
+    border-bottom: 3px solid var(--verde-escuro);
+    padding-bottom: 10px;
+    margin-bottom: 4px;
+  }
+  .subtitulo{
+    color: var(--cinza);
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  h2{
+    color: var(--verde-escuro);
+    background: var(--verde-claro);
+    padding: 10px 14px;
+    border-left: 6px solid var(--verde-escuro);
+    margin-top: 44px;
+    font-size: 1.25em;
+  }
+  h3{
+    color: var(--verde-escuro);
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+    margin-top: 28px;
+    font-size: 1.05em;
+  }
+  p{ margin: 10px 0; }
+  table{
+    width:100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 0.92em;
+  }
+  th{
+    background: var(--verde-escuro);
+    color: #fff;
+    padding: 8px 10px;
+    text-align: left;
+  }
+  td{
+    padding: 8px 10px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td{ background: #f7f9f7; }
+  .pegadinha{
+    background: var(--alerta-bg);
+    border-left: 5px solid var(--alerta);
+    padding: 12px 16px;
+    margin: 14px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .pegadinha .rotulo{
+    font-weight: bold;
+    color: var(--alerta);
+    display:block;
+    margin-bottom: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .dica{
+    background: var(--azul-bg);
+    border-left: 5px solid var(--azul);
+    padding: 12px 16px;
+    margin: 14px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .dica .rotulo{
+    font-weight: bold;
+    color: var(--azul);
+    display:block;
+    margin-bottom: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .caixa-resumo{
+    background: #fff9ec;
+    border: 1px solid #e6d9b0;
+    padding: 14px 18px;
+    margin: 16px 0;
+    border-radius: 4px;
+  }
+  .caixa-resumo strong{ color: var(--dourado); }
+  ul, ol{ margin: 8px 0; padding-left: 26px; }
+  li{ margin-bottom: 6px; }
+  .questoes{
+    background: #f4f6f5;
+    border: 1px solid #d8e0da;
+    border-radius: 6px;
+    padding: 4px 20px 20px;
+    margin-top: 20px;
+  }
+  .questao{
+    margin-top: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px dashed #b9c2ba;
+  }
+  .questao:last-child{ border-bottom: none; }
+  .enunciado{ font-weight: bold; }
+  .alternativas{ list-style: upper-alpha; margin-top: 8px; }
+  .alternativas li{ margin-bottom: 4px; }
+  details.gabarito{
+    margin-top: 8px;
+    background: #eef7ee;
+    border: 1px solid #cfe4cf;
+    border-radius: 4px;
+    padding: 6px 12px;
+  }
+  details.gabarito summary{
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--verde-escuro);
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+  }
+  .banca-tag{
+    display:inline-block;
+    background: var(--verde-escuro);
+    color:#fff;
+    font-family: Arial, sans-serif;
+    font-size: 0.7em;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  .indice{
+    background: var(--verde-claro);
+    padding: 16px 20px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+  }
+  .indice a{ color: var(--verde-escuro); text-decoration: none; }
+  .indice a:hover{ text-decoration: underline; }
+  .indice ol{ columns: 2; -webkit-columns: 2; }
+  .rodape{
+    margin-top: 60px;
+    padding-top: 16px;
+    border-top: 1px solid #ccc;
+    font-size: 0.8em;
+    color: #777;
+    font-family: Arial, sans-serif;
+  }
+  .escada{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin: 14px 0 20px;
+    font-family: Arial, sans-serif;
+    font-size: 0.85em;
+  }
+  .escada span{
+    background: var(--verde-escuro);
+    color:#fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    flex: 1 1 auto;
+    text-align:center;
+  }
+  .escada span:nth-child(1){ background:#1f5c3c; }
+  .escada span:nth-child(2){ background:#2d7350; }
+  .escada span:nth-child(3){ background:#3d8a64; }
+  .escada span:nth-child(4){ background:#5aa17e; }
+  .escada span:nth-child(5){ background:#7fb89a; color:#1c1c1c; }
+  .escada span:nth-child(6){ background:#a8cfba; color:#1c1c1c; }
+</style>
+</head>
+<body>
+
+<h1>Lei nº 12.305/2010 — Política Nacional de Resíduos Sólidos (PNRS)</h1>
+<p class="subtitulo">Guia de estudo consolidado — texto atualizado até a Lei nº 15.088/2025 (alteração do art. 49) e Decreto nº 12.688/2025 · Foco: concurso CESAMA (banca AOCP)</p>
+
+<div class="indice">
+  <strong>Sumário</strong>
+  <ol>
+    <li><a href="#contexto">Objeto, campo de aplicação e integração</a></li>
+    <li><a href="#definicoes">Definições essenciais (art. 3º)</a></li>
+    <li><a href="#principios">Princípios (art. 6º)</a></li>
+    <li><a href="#objetivos">Objetivos (art. 7º)</a></li>
+    <li><a href="#instrumentos">Instrumentos da PNRS (art. 8º)</a></li>
+    <li><a href="#hierarquia">Ordem de prioridade na gestão (art. 9º)</a></li>
+    <li><a href="#competencias">Competências: União, Estados, Municípios</a></li>
+    <li><a href="#classificacao">Classificação dos resíduos sólidos (art. 13)</a></li>
+    <li><a href="#planos">Planos de resíduos sólidos</a></li>
+    <li><a href="#responsabilidade">Responsabilidade compartilhada e logística reversa</a></li>
+    <li><a href="#perigosos">Resíduos perigosos</a></li>
+    <li><a href="#proibicoes">Proibições (arts. 47 a 49)</a></li>
+    <li><a href="#prazos">Prazos para disposição final adequada (art. 54)</a></li>
+    <li><a href="#pegadinhas">Quadro de pegadinhas mais cobradas</a></li>
+    <li><a href="#questoes">Questões de fixação</a></li>
+  </ol>
+</div>
+
+<h2 id="contexto">1. Objeto, campo de aplicação e integração</h2>
+<p>A <strong>Lei nº 12.305/2010</strong> institui a <strong>Política Nacional de Resíduos Sólidos (PNRS)</strong>, dispondo sobre princípios, objetivos, instrumentos, diretrizes relativas à gestão integrada e ao gerenciamento de resíduos sólidos (incluídos os perigosos), responsabilidades dos geradores e do poder público, e instrumentos econômicos aplicáveis (art. 1º). Também alterou a Lei nº 9.605/1998 (Lei de Crimes Ambientais).</p>
+
+<div class="caixa-resumo">
+<strong>Quem está sujeito à Lei (art. 1º, §1º)</strong>
+Pessoas físicas ou jurídicas, de direito público ou privado, responsáveis direta ou indiretamente pela geração de resíduos sólidos, e as que desenvolvam ações de gestão integrada ou gerenciamento de resíduos sólidos.
+</div>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha</span>
+  A PNRS <strong>não se aplica aos rejeitos radioativos</strong> (art. 1º, §2º) — estes são regulados por legislação específica (competência da CNEN). É item clássico de prova: "a PNRS regula todos os tipos de resíduos, inclusive radioativos" → FALSO.
+</div>
+
+<p>A PNRS <strong>integra a Política Nacional do Meio Ambiente</strong> e articula-se com a Política Nacional de Educação Ambiental (Lei 9.795/1999), com a Política Federal de Saneamento Básico (Lei 11.445/2007) e com a Lei nº 11.107/2005 (consórcios públicos) — art. 5º.</p>
+
+<h2 id="definicoes">2. Definições essenciais (art. 3º)</h2>
+<table>
+<tr><th>Termo</th><th>Definição</th></tr>
+<tr><td>Acordo setorial</td><td>Ato de natureza contratual entre poder público e fabricantes/importadores/distribuidores/comerciantes para implantar a responsabilidade compartilhada</td></tr>
+<tr><td>Área órfã contaminada</td><td>Área contaminada cujos responsáveis pela disposição não sejam identificáveis ou individualizáveis</td></tr>
+<tr><td>Coleta seletiva</td><td>Coleta de resíduos sólidos previamente segregados conforme sua constituição ou composição</td></tr>
+<tr><td>Destinação final ambientalmente adequada</td><td>Inclui reutilização, reciclagem, compostagem, recuperação e aproveitamento energético, entre elas a disposição final</td></tr>
+<tr><td>Disposição final ambientalmente adequada</td><td>Distribuição ordenada de <strong>rejeitos</strong> em aterros, observando normas operacionais específicas</td></tr>
+<tr><td>Gerenciamento de resíduos sólidos</td><td>Conjunto de ações nas etapas de coleta, transporte, transbordo, tratamento e destinação final</td></tr>
+<tr><td>Gestão integrada de resíduos sólidos</td><td>Conjunto de ações que considera as dimensões política, econômica, ambiental, cultural e social, com controle social e desenvolvimento sustentável</td></tr>
+<tr><td>Logística reversa</td><td>Instrumento de desenvolvimento econômico e social para viabilizar a coleta e restituição dos resíduos sólidos ao setor empresarial, para reaproveitamento ou destinação final adequada</td></tr>
+<tr><td>Reciclagem</td><td>Transformação dos resíduos com alteração de propriedades físicas/físico-químicas/biológicas, gerando insumos ou novos produtos</td></tr>
+<tr><td>Reutilização</td><td>Aproveitamento dos resíduos <strong>sem</strong> transformação biológica, física ou físico-química</td></tr>
+<tr><td>Rejeitos</td><td>Resíduos sólidos que, esgotadas todas as possibilidades de tratamento/recuperação tecnicamente e economicamente viáveis, só resta a disposição final ambientalmente adequada</td></tr>
+<tr><td>Resíduos sólidos</td><td>Material, substância, objeto ou bem descartado, nos estados sólido ou semissólido, incluindo gases em recipientes e líquidos inviáveis para lançamento em rede de esgoto/corpos d'água</td></tr>
+<tr><td>Responsabilidade compartilhada</td><td>Atribuições individualizadas e encadeadas de fabricantes, importadores, distribuidores, comerciantes, consumidores e titulares dos serviços públicos de limpeza urbana</td></tr>
+</table>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha — Reciclagem x Reutilização</span>
+  <strong>Reciclagem</strong> envolve <strong>transformação</strong> das propriedades do resíduo (físicas, físico-químicas ou biológicas). <strong>Reutilização</strong> é o aproveitamento <strong>sem</strong> essa transformação (ex.: reutilizar um pote de vidro como recipiente). Bancas trocam essas definições com frequência.
+</div>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha — Resíduo x Rejeito</span>
+  Todo <strong>rejeito</strong> é resíduo, mas nem todo resíduo é rejeito. <strong>Rejeito</strong> é o resíduo sem mais possibilidade de tratamento/recuperação viável — só resta a disposição final em aterro. Já o <strong>resíduo</strong> em geral pode ainda ser reciclado, reutilizado, compostado etc.
+</div>
+
+<h2 id="principios">3. Princípios (art. 6º)</h2>
+<p>São princípios da PNRS (rol de 11 incisos):</p>
+<ul>
+  <li>Prevenção e precaução;</li>
+  <li><strong>Poluidor-pagador e protetor-recebedor</strong>;</li>
+  <li>Visão sistêmica (variáveis ambiental, social, cultural, econômica, tecnológica e de saúde pública);</li>
+  <li>Desenvolvimento sustentável;</li>
+  <li>Ecoeficiência;</li>
+  <li>Cooperação entre poder público, setor empresarial e sociedade;</li>
+  <li>Responsabilidade compartilhada pelo ciclo de vida dos produtos;</li>
+  <li><strong>Reconhecimento do resíduo sólido reutilizável e reciclável como bem econômico e de valor social</strong>, gerador de trabalho e renda e promotor de cidadania;</li>
+  <li>Respeito às diversidades locais e regionais;</li>
+  <li>Direito da sociedade à informação e ao controle social;</li>
+  <li>Razoabilidade e proporcionalidade.</li>
+</ul>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha</span>
+  Cuidado ao confundir "poluidor-pagador" com uma simples multa: o princípio combina <strong>poluidor-pagador</strong> (quem gera o dano paga pelos custos de prevenção/reparação) com <strong>protetor-recebedor</strong> (quem protege o meio ambiente pode receber incentivo/compensação) — os dois lados formam um único inciso (II).
+</div>
+
+<h2 id="objetivos">4. Objetivos (art. 7º)</h2>
+<p>Destaques do rol de 15 incisos:</p>
+<ul>
+  <li>Proteção da saúde pública e da qualidade ambiental;</li>
+  <li>Não geração, redução, reutilização, reciclagem e tratamento dos resíduos, e disposição final ambientalmente adequada dos rejeitos;</li>
+  <li>Estímulo a padrões sustentáveis de produção e consumo;</li>
+  <li>Incentivo à indústria da reciclagem;</li>
+  <li>Gestão integrada de resíduos sólidos;</li>
+  <li><strong>Prioridade, nas aquisições e contratações governamentais</strong>, para produtos reciclados/recicláveis e bens/serviços/obras sustentáveis;</li>
+  <li><strong>Integração dos catadores de materiais reutilizáveis e recicláveis</strong> nas ações de responsabilidade compartilhada;</li>
+  <li>Regularidade, continuidade, funcionalidade e universalização da prestação dos serviços de limpeza urbana e manejo de resíduos sólidos.</li>
+</ul>
+
+<h2 id="instrumentos">5. Instrumentos da PNRS (art. 8º)</h2>
+<p>Entre outros, são instrumentos da Política:</p>
+<table>
+<tr><th>Instrumento</th><th>Observação</th></tr>
+<tr><td>Planos de resíduos sólidos</td><td>Nacional, estaduais, microrregionais, intermunicipais, municipais e de gerenciamento</td></tr>
+<tr><td>Coleta seletiva, logística reversa e outros de responsabilidade compartilhada</td><td>-</td></tr>
+<tr><td>Incentivo a cooperativas de catadores</td><td>-</td></tr>
+<tr><td>Sinir — Sistema Nacional de Informações sobre a Gestão dos Resíduos Sólidos</td><td>Articulado com Sinisa e Sinima</td></tr>
+<tr><td>Sinisa — Sistema Nacional de Informações em Saneamento Básico</td><td>Também instrumento da PNRS (interligação com a Lei 11.445/2007)</td></tr>
+<tr><td>Cadastro Nacional de Operadores de Resíduos Perigosos</td><td>-</td></tr>
+<tr><td>Acordos setoriais</td><td>Natureza contratual entre poder público e setor empresarial</td></tr>
+<tr><td>Incentivo a consórcios públicos</td><td>Ganhos de escala e redução de custos</td></tr>
+</table>
+
+<h2 id="hierarquia">6. Ordem de prioridade na gestão (art. 9º) — a "escada da hierarquia"</h2>
+<p>Na gestão e gerenciamento de resíduos sólidos, deve ser observada a seguinte <strong>ordem de prioridade</strong>:</p>
+<div class="escada">
+  <span>1. Não geração</span>
+  <span>2. Redução</span>
+  <span>3. Reutilização</span>
+  <span>4. Reciclagem</span>
+  <span>5. Tratamento</span>
+  <span>6. Disposição final ambientalmente adequada (rejeitos)</span>
+</div>
+<p>Poderão ser utilizadas tecnologias de <strong>recuperação energética</strong> dos resíduos sólidos urbanos, desde que comprovada viabilidade técnica e ambiental, com programa de monitoramento de emissão de gases tóxicos aprovado pelo órgão ambiental (art. 9º, §1º).</p>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha — ordem exata</span>
+  Decore a sequência exata e não troque a ordem: <strong>não geração → redução → reutilização → reciclagem → tratamento → disposição final</strong>. A disposição final é sempre o <strong>último recurso</strong>, reservada aos rejeitos.
+</div>
+
+<h2 id="competencias">7. Competências: União, Estados e Municípios</h2>
+<table>
+<tr><th>Ente</th><th>Competência principal</th></tr>
+<tr><td>Distrito Federal e Municípios</td><td>Gestão integrada dos resíduos sólidos gerados em seus territórios (art. 10)</td></tr>
+<tr><td>Estados</td><td>Integração da organização/planejamento/execução das funções de interesse comum em regiões metropolitanas/aglomerações/microrregiões; controle e fiscalização de atividades sujeitas a licenciamento estadual (art. 11)</td></tr>
+<tr><td>União, Estados, DF e Municípios</td><td>Organizam e mantêm, de forma conjunta, o Sinir, articulado com Sinisa e Sinima (art. 12)</td></tr>
+</table>
+
+<h2 id="classificacao">8. Classificação dos resíduos sólidos (art. 13)</h2>
+<h3>Quanto à origem</h3>
+<table>
+<tr><th>Categoria</th><th>Descrição</th></tr>
+<tr><td>Domiciliares</td><td>Originários de atividades domésticas em residências urbanas</td></tr>
+<tr><td>Limpeza urbana</td><td>Originários de varrição, limpeza de logradouros e vias públicas</td></tr>
+<tr><td>Resíduos sólidos urbanos</td><td>Englobam domiciliares + limpeza urbana (alíneas "a" e "b")</td></tr>
+<tr><td>Estabelecimentos comerciais/prestadores de serviços</td><td>Gerados nessas atividades</td></tr>
+<tr><td>Serviços públicos de saneamento básico</td><td>Gerados nessas atividades</td></tr>
+<tr><td>Industriais</td><td>Gerados em processos produtivos e instalações industriais</td></tr>
+<tr><td>Serviços de saúde</td><td>Definição em regulamento/normas Sisnama-SNVS</td></tr>
+<tr><td>Construção civil</td><td>Construções, reformas, reparos, demolições, preparação de terrenos</td></tr>
+<tr><td>Agrossilvopastoris</td><td>Atividades agropecuárias e silviculturais</td></tr>
+<tr><td>Serviços de transportes</td><td>Portos, aeroportos, terminais, passagens de fronteira</td></tr>
+<tr><td>Mineração</td><td>Pesquisa, extração ou beneficiamento de minérios</td></tr>
+</table>
+<h3>Quanto à periculosidade</h3>
+<ul>
+  <li><strong>Perigosos:</strong> inflamabilidade, corrosividade, reatividade, toxicidade, patogenicidade, carcinogenicidade, teratogenicidade, mutagenicidade — risco significativo à saúde ou ao meio ambiente;</li>
+  <li><strong>Não perigosos:</strong> os demais.</li>
+</ul>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha</span>
+  Resíduos de estabelecimentos comerciais/prestadores de serviços, se <strong>não perigosos</strong>, podem ser <strong>equiparados aos resíduos domiciliares</strong> pelo poder público municipal, em razão de sua natureza, composição ou volume (art. 13, parágrafo único) — isso os inclui na competência do serviço público de limpeza urbana.
+</div>
+
+<h2 id="planos">9. Planos de resíduos sólidos</h2>
+<table>
+<tr><th>Plano</th><th>Horizonte / Revisão</th><th>Observações</th></tr>
+<tr><td>Plano Nacional de Resíduos Sólidos</td><td>Vigência indeterminada; horizonte de <strong>20 anos</strong>; atualização a cada <strong>4 anos</strong></td><td>Coordenação do Ministério do Meio Ambiente (art. 15)</td></tr>
+<tr><td>Plano Estadual de Resíduos Sólidos</td><td>Vigência indeterminada; horizonte de <strong>20 anos</strong>; revisões a cada <strong>4 anos</strong></td><td>Condição para acesso a recursos da União (art. 16, 17)</td></tr>
+<tr><td>Plano Municipal de Gestão Integrada de Resíduos Sólidos</td><td>Revisão em até <strong>10 anos</strong> (redação dada pela Lei 14.026/2020)</td><td>Condição para acesso a recursos da União; pode estar inserido no plano de saneamento básico</td></tr>
+<tr><td>Plano de Gerenciamento de Resíduos Sólidos</td><td>Conforme licença de operação</td><td>Elaborado pelo gerador (art. 20); parte do licenciamento ambiental</td></tr>
+</table>
+
+<div class="caixa-resumo">
+  <strong>Municípios com menos de 20.000 habitantes (art. 19, §2º):</strong> plano municipal com <strong>conteúdo simplificado</strong>. Exceção (§3º): não se aplica a Municípios de especial interesse turístico, na área de influência de empreendimentos de significativo impacto ambiental, ou com território abrangendo Unidades de Conservação.
+</div>
+
+<p><strong>Quem está sujeito a elaborar plano de gerenciamento de resíduos sólidos (art. 20):</strong> geradores de resíduos de serviços de saneamento, industriais, de serviços de saúde e de mineração; estabelecimentos que gerem resíduos perigosos ou não equiparáveis aos domiciliares; empresas de construção civil; responsáveis por terminais de transporte; responsáveis por atividades agrossilvopastoris, se exigido.</p>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha</span>
+  Não confundir os horizontes: Plano Nacional e Plano Estadual → <strong>20 anos</strong> de horizonte, revisão a cada <strong>4 anos</strong>. Plano Municipal → revisão em até <strong>10 anos</strong> (regra alterada pela Lei 14.026/2020, que substituiu o critério de "período do PPA municipal").
+</div>
+
+<h2 id="responsabilidade">10. Responsabilidade compartilhada e logística reversa</h2>
+<p>A <strong>responsabilidade compartilhada pelo ciclo de vida dos produtos</strong> (art. 30) é implementada de forma <strong>individualizada e encadeada</strong>, abrangendo: fabricantes, importadores, distribuidores e comerciantes; consumidores; e titulares dos serviços públicos de limpeza urbana e manejo de resíduos sólidos.</p>
+
+<div class="caixa-resumo">
+<strong>Sistemas obrigatórios de logística reversa (art. 33) — decore a lista</strong>
+<ol>
+  <li>Agrotóxicos, seus resíduos e embalagens;</li>
+  <li>Pilhas e baterias;</li>
+  <li>Pneus;</li>
+  <li>Óleos lubrificantes, seus resíduos e embalagens;</li>
+  <li>Lâmpadas fluorescentes, de vapor de sódio e mercúrio e de luz mista;</li>
+  <li>Produtos eletroeletrônicos e seus componentes.</li>
+</ol>
+</div>
+
+<p>Fluxo da devolução no sistema de logística reversa: <strong>consumidor → comerciante/distribuidor → fabricante/importador</strong> (art. 33, §§4º a 6º), cabendo aos fabricantes/importadores dar destinação ambientalmente adequada, encaminhando o rejeito para disposição final.</p>
+
+<p><strong>Embalagens (art. 32):</strong> devem ser fabricadas com materiais que propiciem reutilização ou reciclagem; restritas em volume/peso ao necessário; projetadas para reutilização tecnicamente viável; recicladas se a reutilização não for possível.</p>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha</span>
+  A contratação de cooperativas de catadores para atividades de coleta seletiva/reaproveitamento é <strong>dispensável de licitação</strong>, nos termos do art. 24, XXVII, da antiga Lei nº 8.666/1993 (art. 36, §2º da PNRS) — item cobrado com frequência em provas de licitação combinadas com resíduos sólidos.
+</div>
+
+<h2 id="perigosos">11. Resíduos perigosos (Capítulo IV)</h2>
+<ul>
+  <li>Instalação/funcionamento de empreendimento que gere/opere com resíduos perigosos só é autorizado mediante comprovação de <strong>capacidade técnica e econômica</strong> (art. 37);</li>
+  <li>Obrigatoriedade de cadastro no <strong>Cadastro Nacional de Operadores de Resíduos Perigosos</strong> (art. 38);</li>
+  <li>Obrigatoriedade de <strong>plano de gerenciamento de resíduos perigosos</strong> (art. 39), com informação anual ao órgão do Sisnama sobre quantidade, natureza e destinação;</li>
+  <li>O órgão licenciador pode exigir <strong>contratação de seguro de responsabilidade civil</strong> por danos ao meio ambiente/saúde pública (art. 40).</li>
+</ul>
+
+<h2 id="proibicoes">12. Proibições (arts. 47 a 49)</h2>
+<div class="caixa-resumo">
+<strong>Formas proibidas de destinação/disposição final (art. 47)</strong>
+<ul>
+  <li>Lançamento em praias, no mar ou em quaisquer corpos hídricos;</li>
+  <li>Lançamento <em>in natura</em> a céu aberto (exceto resíduos de mineração);</li>
+  <li>Queima a céu aberto ou em equipamentos não licenciados;</li>
+  <li>Outras formas vedadas pelo poder público.</li>
+</ul>
+<em>Exceção:</em> em emergência sanitária decretada, a queima a céu aberto pode ser autorizada e acompanhada pelos órgãos competentes (art. 47, §1º).
+</div>
+
+<p><strong>Atividades proibidas em áreas de disposição final (art. 48):</strong> utilização de rejeitos como alimentação; catação (ressalvada organização de catadores); criação de animais domésticos; fixação de habitações temporárias ou permanentes.</p>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha — atualização recente</span>
+  O art. 49 foi <strong>alterado pela Lei nº 15.088/2025</strong>. A redação original (2010) proibia a importação apenas de resíduos <strong>perigosos</strong>. A redação atual amplia a proibição: é proibida a <strong>importação de resíduos sólidos e de rejeitos em geral</strong>, inclusive de <strong>papel, derivados de papel, plástico, vidro e metal</strong> — com ressalvas para materiais estratégicos e para autopeças/produtos nacionais previamente exportados destinados à logística reversa.
+</div>
+
+<h2 id="prazos">13. Prazos para disposição final ambientalmente adequada (art. 54)</h2>
+<p>A redação original previa prazo único de 4 anos após a publicação da Lei. A <strong>Lei nº 14.026/2020</strong> reescreveu o art. 54, estabelecendo prazo geral de <strong>31 de dezembro de 2020</strong>, com escalonamento para Municípios que tivessem plano de resíduos sólidos e mecanismo de cobrança sustentável:</p>
+<table>
+<tr><th>Categoria de Município</th><th>Prazo</th></tr>
+<tr><td>Capitais de Estado e Municípios de Região Metropolitana ou Ride de capitais</td><td>até 2 de agosto de 2021</td></tr>
+<tr><td>Municípios com mais de 100.000 habitantes (Censo 2010) ou sede a menos de 20 km de fronteira internacional</td><td>até 2 de agosto de 2022</td></tr>
+<tr><td>Municípios entre 50.000 e 100.000 habitantes (Censo 2010)</td><td>até 2 de agosto de 2023</td></tr>
+<tr><td>Municípios com menos de 50.000 habitantes (Censo 2010)</td><td>até 2 de agosto de 2024</td></tr>
+</table>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha numérica</span>
+  O escalonamento é <strong>decrescente por porte populacional</strong>: quanto maior o Município, mais cedo vence o prazo. Não confundir com a lógica inversa. Base populacional sempre o <strong>Censo 2010</strong> (não o de 2022).
+</div>
+
+<h2 id="pegadinhas">14. Quadro-resumo de pegadinhas mais cobradas</h2>
+<table>
+<tr><th>Afirmação incorreta comum</th><th>Correção</th></tr>
+<tr><td>"A PNRS aplica-se também aos rejeitos radioativos"</td><td>Falso — excluídos pelo art. 1º, §2º</td></tr>
+<tr><td>"Reciclagem e reutilização são sinônimos"</td><td>Falso — reciclagem transforma o resíduo; reutilização não</td></tr>
+<tr><td>"Todo resíduo é rejeito"</td><td>Falso — rejeito é o resíduo sem mais possibilidade de aproveitamento</td></tr>
+<tr><td>"A ordem de prioridade começa pela reciclagem"</td><td>Falso — começa por não geração, depois redução, reutilização, reciclagem, tratamento, disposição final</td></tr>
+<tr><td>"O plano municipal de resíduos deve ser revisado a cada 4 anos, como o nacional"</td><td>Falso — municipal: até 10 anos; nacional/estadual: 20 anos de horizonte, revisão a cada 4 anos</td></tr>
+<tr><td>"A logística reversa de eletroeletrônicos é facultativa"</td><td>Falso — é um dos 6 grupos de logística reversa obrigatória (art. 33)</td></tr>
+<tr><td>"É proibida apenas a importação de resíduos perigosos"</td><td>Desatualizado — desde a Lei 15.088/2025, a proibição alcança resíduos e rejeitos em geral, inclusive papel, plástico, vidro e metal (com ressalvas)</td></tr>
+<tr><td>"A contratação de cooperativas de catadores exige licitação"</td><td>Falso — é dispensável de licitação (art. 36, §2º)</td></tr>
+</table>
+
+<h2 id="questoes">15. Questões de fixação (estilo AOCP)</h2>
+<div class="questoes">
+
+<div class="questao">
+  <p class="enunciado">1. Nos termos do art. 1º, §2º, da Lei nº 12.305/2010, a Política Nacional de Resíduos Sólidos: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Aplica-se a todos os resíduos, inclusive radioativos.</li>
+    <li>Não se aplica aos rejeitos radioativos, regulados por legislação específica.</li>
+    <li>Aplica-se apenas aos resíduos domiciliares.</li>
+    <li>Aplica-se apenas a resíduos gerados por pessoas jurídicas de direito público.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: B.</strong> Art. 1º, §2º: os rejeitos radioativos são regulados por legislação específica e excluídos do âmbito da PNRS.</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">2. Segundo a Lei nº 12.305/2010, a ordem de prioridade a ser observada na gestão e gerenciamento de resíduos sólidos é: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Reciclagem, redução, reutilização, não geração, tratamento, disposição final.</li>
+    <li>Não geração, redução, reutilização, reciclagem, tratamento, disposição final ambientalmente adequada dos rejeitos.</li>
+    <li>Disposição final, tratamento, reciclagem, reutilização, redução, não geração.</li>
+    <li>Reutilização, reciclagem, não geração, redução, tratamento, disposição final.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: B.</strong> Art. 9º, caput — ordem exata de prioridade da hierarquia de resíduos.</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">3. De acordo com o art. 3º da Lei nº 12.305/2010, o processo de aproveitamento dos resíduos sólidos sem sua transformação biológica, física ou físico-química denomina-se: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Reciclagem.</li>
+    <li>Reutilização.</li>
+    <li>Logística reversa.</li>
+    <li>Compostagem.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: B.</strong> Art. 3º, XVIII — definição exata de reutilização, em contraposição à reciclagem (que envolve transformação).</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">4. São obrigados a estruturar sistemas de logística reversa, independentemente de acordo setorial, os fabricantes, importadores, distribuidores e comerciantes de, EXCETO: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Pilhas e baterias.</li>
+    <li>Pneus.</li>
+    <li>Resíduos domiciliares comuns.</li>
+    <li>Produtos eletroeletrônicos e seus componentes.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: C.</strong> Art. 33, incisos I a VI: agrotóxicos, pilhas/baterias, pneus, óleos lubrificantes, lâmpadas e eletroeletrônicos. Resíduos domiciliares comuns não integram esse rol específico — são objeto do serviço público de limpeza urbana.</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">5. Segundo o art. 13 da Lei nº 12.305/2010, os resíduos sólidos urbanos englobam: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Apenas os resíduos industriais.</li>
+    <li>Os resíduos domiciliares e os resíduos de limpeza urbana.</li>
+    <li>Apenas os resíduos de serviços de saúde.</li>
+    <li>Os resíduos de mineração e agrossilvopastoris.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: B.</strong> Art. 13, I, "c": resíduos sólidos urbanos = alíneas "a" (domiciliares) + "b" (limpeza urbana).</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">6. Quanto à periculosidade, são considerados resíduos perigosos aqueles que apresentem características de, EXCETO: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Inflamabilidade e corrosividade.</li>
+    <li>Reatividade e toxicidade.</li>
+    <li>Patogenicidade, carcinogenicidade, teratogenicidade e mutagenicidade.</li>
+    <li>Baixo volume de geração.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: D.</strong> Art. 13, II, "a": o volume de geração não é critério de periculosidade — o que importa são as características intrínsecas do resíduo (risco à saúde/ambiente).</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">7. O Plano Nacional de Resíduos Sólidos, elaborado sob coordenação do Ministério do Meio Ambiente, terá: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Vigência por 10 anos, sem possibilidade de atualização.</li>
+    <li>Vigência por prazo indeterminado, horizonte de 20 anos, atualizado a cada 4 anos.</li>
+    <li>Vigência por prazo determinado de 4 anos.</li>
+    <li>Vigência vinculada exclusivamente ao mandato presidencial.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: B.</strong> Art. 15, caput.</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">8. Nos termos do art. 19, §2º, da Lei nº 12.305/2010, os Municípios com menos de 20.000 habitantes: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Estão dispensados de qualquer plano municipal de resíduos sólidos.</li>
+    <li>Devem elaborar plano municipal de gestão integrada de resíduos sólidos com conteúdo simplificado, salvo exceções legais.</li>
+    <li>Devem obrigatoriamente aderir a consórcio intermunicipal.</li>
+    <li>Estão dispensados de licenciamento ambiental de aterros sanitários.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: B.</strong> Art. 19, §2º e §3º — conteúdo simplificado, exceto para Municípios turísticos, de significativo impacto ambiental regional/nacional ou com Unidades de Conservação em seu território.</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">9. Conforme o art. 36, §2º, da Lei nº 12.305/2010, a contratação de cooperativas de catadores de materiais reutilizáveis e recicláveis pelo titular do serviço público de limpeza urbana: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Exige licitação na modalidade concorrência.</li>
+    <li>É dispensável de licitação, nos termos da legislação de licitações e contratos.</li>
+    <li>É vedada pela Lei nº 12.305/2010.</li>
+    <li>Depende de autorização do Ministério do Meio Ambiente.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: B.</strong> Art. 36, §2º: dispensa de licitação nos termos do art. 24, XXVII, da Lei nº 8.666/1993.</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">10. É proibida, nas áreas de disposição final de resíduos ou rejeitos, a seguinte atividade, entre outras previstas no art. 48 da Lei nº 12.305/2010: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Fiscalização ambiental pelo órgão competente.</li>
+    <li>Fixação de habitações temporárias ou permanentes.</li>
+    <li>Monitoramento de gases pelo órgão licenciador.</li>
+    <li>Elaboração de plano de gerenciamento pelo responsável técnico.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: B.</strong> Art. 48, IV — proibida a fixação de habitações temporárias ou permanentes nas áreas de disposição final, junto com utilização de rejeitos como alimentação, catação (fora da organização de catadores) e criação de animais domésticos.</p>
+  </details>
+</div>
+
+</div>
+
+<div class="rodape">
+  Guia elaborado com base no texto compilado da Lei nº 12.305/2010 (Planalto), incluindo as alterações da Lei nº 14.026/2020 (planos e prazos do art. 54) e da Lei nº 15.088/2025 (art. 49, importação de resíduos). Recomenda-se conferir eventuais atualizações supervenientes junto ao texto oficial (planalto.gov.br) antes da prova.
+</div>
+
+</body>
+</html>
