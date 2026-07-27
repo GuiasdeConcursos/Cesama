@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Guia de Estudo — Lei nº 11.445/2007 (Marco Legal do Saneamento Básico)</title>
+<style>
+  :root{
+    --azul:#0b3d63;
+    --azul-claro:#e8f1f8;
+    --dourado:#b8860b;
+    --cinza:#4a4a4a;
+    --alerta:#8a1f11;
+    --alerta-bg:#fdecea;
+    --verde:#1f6f43;
+    --verde-bg:#eaf5ee;
+  }
+  body{
+    font-family: Georgia, 'Times New Roman', serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    line-height: 1.6;
+    color:#1c1c1c;
+    background:#fffefb;
+  }
+  h1{
+    color: var(--azul);
+    font-size: 1.9em;
+    border-bottom: 3px solid var(--azul);
+    padding-bottom: 10px;
+    margin-bottom: 4px;
+  }
+  .subtitulo{
+    color: var(--cinza);
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  h2{
+    color: var(--azul);
+    background: var(--azul-claro);
+    padding: 10px 14px;
+    border-left: 6px solid var(--azul);
+    margin-top: 44px;
+    font-size: 1.25em;
+  }
+  h3{
+    color: var(--azul);
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+    margin-top: 28px;
+    font-size: 1.05em;
+  }
+  p{ margin: 10px 0; }
+  .base-legal{
+    font-family: 'Courier New', monospace;
+    font-size: 0.85em;
+    color: var(--dourado);
+    font-weight: bold;
+  }
+  table{
+    width:100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 0.92em;
+  }
+  th{
+    background: var(--azul);
+    color: #fff;
+    padding: 8px 10px;
+    text-align: left;
+  }
+  td{
+    padding: 8px 10px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td{ background: #f7f9fb; }
+  .pegadinha{
+    background: var(--alerta-bg);
+    border-left: 5px solid var(--alerta);
+    padding: 12px 16px;
+    margin: 14px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .pegadinha .rotulo{
+    font-weight: bold;
+    color: var(--alerta);
+    display:block;
+    margin-bottom: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .dica{
+    background: var(--verde-bg);
+    border-left: 5px solid var(--verde);
+    padding: 12px 16px;
+    margin: 14px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .dica .rotulo{
+    font-weight: bold;
+    color: var(--verde);
+    display:block;
+    margin-bottom: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .caixa-resumo{
+    background: #fff9ec;
+    border: 1px solid #e6d9b0;
+    padding: 14px 18px;
+    margin: 16px 0;
+    border-radius: 4px;
+  }
+  .caixa-resumo strong{ color: var(--dourado); }
+  ul, ol{ margin: 8px 0; padding-left: 26px; }
+  li{ margin-bottom: 6px; }
+  .questoes{
+    background: #f4f6f8;
+    border: 1px solid #d8dde2;
+    border-radius: 6px;
+    padding: 4px 20px 20px;
+    margin-top: 20px;
+  }
+  .questao{
+    margin-top: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px dashed #b9c2ca;
+  }
+  .questao:last-child{ border-bottom: none; }
+  .enunciado{ font-weight: bold; }
+  .alternativas{ list-style: upper-alpha; margin-top: 8px; }
+  .alternativas li{ margin-bottom: 4px; }
+  details.gabarito{
+    margin-top: 8px;
+    background: #eef7ee;
+    border: 1px solid #cfe4cf;
+    border-radius: 4px;
+    padding: 6px 12px;
+  }
+  details.gabarito summary{
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--verde);
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+  }
+  .banca-tag{
+    display:inline-block;
+    background: var(--azul);
+    color:#fff;
+    font-family: Arial, sans-serif;
+    font-size: 0.7em;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  .indice{
+    background: var(--azul-claro);
+    padding: 16px 20px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+  }
+  .indice a{ color: var(--azul); text-decoration: none; }
+  .indice a:hover{ text-decoration: underline; }
+  .indice ol{ columns: 2; -webkit-columns: 2; }
+  .rodape{
+    margin-top: 60px;
+    padding-top: 16px;
+    border-top: 1px solid #ccc;
+    font-size: 0.8em;
+    color: #777;
+    font-family: Arial, sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<h1>Lei nº 11.445/2007 — Marco Legal do Saneamento Básico</h1>
+<p class="subtitulo">Guia de estudo consolidado — texto atualizado pela Lei nº 14.026/2020 e alterações posteriores (Leis nº 14.546/2023, 14.600/2023, 15.012/2024, 15.112/2025) · Foco: concurso CESAMA (banca AOCP)</p>
+
+<div class="indice">
+  <strong>Sumário</strong>
+  <ol>
+    <li><a href="#contexto">Contexto e evolução legislativa</a></li>
+    <li><a href="#principios">Princípios fundamentais (art. 2º)</a></li>
+    <li><a href="#conceitos">Conceitos essenciais (art. 3º)</a></li>
+    <li><a href="#componentes">Os quatro componentes do saneamento básico</a></li>
+    <li><a href="#titularidade">Titularidade dos serviços</a></li>
+    <li><a href="#regionalizada">Prestação regionalizada</a></li>
+    <li><a href="#contratos">Contratos e condições de validade</a></li>
+    <li><a href="#planejamento">Planejamento</a></li>
+    <li><a href="#regulacao">Regulação</a></li>
+    <li><a href="#economicos">Aspectos econômicos e tarifários</a></li>
+    <li><a href="#tecnicos">Aspectos técnicos</a></li>
+    <li><a href="#federal">Política Federal de Saneamento Básico</a></li>
+    <li><a href="#metas">Metas de universalização</a></li>
+    <li><a href="#pegadinhas">Quadro de pegadinhas mais cobradas</a></li>
+    <li><a href="#questoes">Questões de fixação</a></li>
+  </ol>
+</div>
+
+<h2 id="contexto">1. Contexto e evolução legislativa</h2>
+<p>A <strong>Lei nº 11.445/2007</strong> estabelece as diretrizes nacionais para o saneamento básico e para a política federal de saneamento básico. Ela <strong>não foi revogada</strong> pela Lei nº 14.026/2020 (o chamado "novo Marco Legal do Saneamento") — foi <strong>atualizada e substancialmente alterada</strong> por ela, mantendo grande parte de sua estrutura original, mas incorporando um novo arcabouço orientado à universalização e à regionalização.</p>
+
+<div class="caixa-resumo">
+<strong>Linha do tempo essencial</strong>
+<ul>
+  <li><strong>2007</strong> — Lei nº 11.445, marco original.</li>
+  <li><strong>2010</strong> — Decreto nº 7.217/2010, regulamento da Lei.</li>
+  <li><strong>2020</strong> — Lei nº 14.026/2020, "novo Marco Legal do Saneamento": introduz metas de universalização, prestação regionalizada, vedação a contratos de programa para novas delegações, competência normativa da ANA.</li>
+  <li><strong>2023</strong> — Leis nº 14.546/2023 e 14.600/2023: reúso de águas cinzas/pluviais, transferência de competências para o Ministério das Cidades.</li>
+  <li><strong>2024/2025</strong> — Leis nº 15.012/2024 e 15.112/2025: transparência sobre reservatórios/segurança hídrica e regras de drenagem urbana em situação de emergência.</li>
+</ul>
+</div>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha clássica</span>
+  A banca costuma afirmar que "a Lei nº 14.026/2020 revogou a Lei nº 11.445/2007". <strong>Está errado.</strong> A Lei 14.026/2020 é uma lei modificadora: alterou dezenas de artigos e revogou dispositivos pontuais (como os arts. 14, 15 e 16, que tratavam da antiga prestação regionalizada), mas a Lei 11.445/2007 continua em vigor como norma-base.
+</div>
+
+<h2 id="principios">2. Princípios fundamentais (art. 2º)</h2>
+<p>Os serviços públicos de saneamento básico serão prestados com base nos seguintes princípios fundamentais (rol do art. 2º, incisos I a XVI):</p>
+<table>
+<tr><th>Inciso</th><th>Princípio</th></tr>
+<tr><td>I</td><td>Universalização do acesso e efetiva prestação do serviço</td></tr>
+<tr><td>II</td><td>Integralidade (conjunto de atividades que maximizem a eficácia)</td></tr>
+<tr><td>III</td><td>Abastecimento de água, esgotamento sanitário, limpeza urbana e manejo de resíduos sólidos adequados à saúde pública</td></tr>
+<tr><td>IV</td><td>Disponibilidade, nas áreas urbanas, de drenagem e manejo de águas pluviais</td></tr>
+<tr><td>V</td><td>Adoção de métodos e técnicas que considerem peculiaridades locais e regionais</td></tr>
+<tr><td>VI</td><td>Articulação com políticas de desenvolvimento urbano, habitação, combate à pobreza, saúde, recursos hídricos</td></tr>
+<tr><td>VII</td><td>Eficiência e sustentabilidade econômica</td></tr>
+<tr><td>VIII</td><td>Estímulo à pesquisa e utilização de tecnologias apropriadas</td></tr>
+<tr><td>IX</td><td>Transparência das ações</td></tr>
+<tr><td>X</td><td>Controle social</td></tr>
+<tr><td>XI</td><td>Segurança, qualidade, regularidade e continuidade</td></tr>
+<tr><td>XII</td><td>Integração das infraestruturas com a gestão eficiente dos recursos hídricos</td></tr>
+<tr><td>XIII</td><td>Redução e controle das perdas de água; estímulo à eficiência energética, reúso e aproveitamento de água de chuva</td></tr>
+<tr><td>XIV</td><td>Prestação regionalizada dos serviços, com vistas a ganhos de escala <em>(incluído em 2020)</em></td></tr>
+<tr><td>XV</td><td>Seleção competitiva do prestador dos serviços <em>(incluído em 2020)</em></td></tr>
+<tr><td>XVI</td><td>Prestação concomitante dos serviços de água e esgotamento sanitário <em>(incluído em 2020)</em></td></tr>
+</table>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha</span>
+  Os incisos XIV, XV e XVI foram <strong>incluídos</strong> pela Lei 14.026/2020 — não existiam na redação original de 2007. Bancas gostam de perguntar "desde a origem da Lei" sobre regionalização e seleção competitiva: a resposta correta é que esses princípios só passaram a existir a partir de 2020.
+</div>
+
+<h2 id="conceitos">3. Conceitos essenciais (art. 3º)</h2>
+<p>O art. 3º, com redação dada pela Lei 14.026/2020, trouxe um extenso rol de definições. As mais cobradas:</p>
+<table>
+<tr><th>Termo</th><th>Definição resumida</th></tr>
+<tr><td>Saneamento básico</td><td>Conjunto de serviços <strong>públicos</strong>, infraestruturas e instalações operacionais dos 4 componentes (água, esgoto, limpeza urbana/resíduos, drenagem pluvial)</td></tr>
+<tr><td>Gestão associada</td><td>Associação voluntária entre entes federativos, por consórcio público ou convênio de cooperação (art. 241, CF)</td></tr>
+<tr><td>Universalização</td><td>Ampliação progressiva do acesso de todos os domicílios ocupados a todos os serviços de saneamento</td></tr>
+<tr><td>Controle social</td><td>Mecanismos que garantem à sociedade informação, representação técnica e participação no planejamento/regulação</td></tr>
+<tr><td>Prestação regionalizada</td><td>Prestação integrada de um ou mais componentes em região com mais de um Município, estruturada em: região metropolitana/aglomeração urbana/microrregião; unidade regional de saneamento; ou bloco de referência</td></tr>
+<tr><td>Subsídios</td><td>Instrumentos econômicos de política social que contribuem para a universalização por populações de baixa renda</td></tr>
+<tr><td>Localidades de pequeno porte</td><td>Vilas, aglomerados rurais, povoados, núcleos, lugarejos e aldeias (definição do IBGE)</td></tr>
+<tr><td>Sistema condominial</td><td>Rede coletora de esgoto assentada no interior dos lotes, interligada à rede pública em um único ponto</td></tr>
+<tr><td>Sistema unitário</td><td>Conduz conjuntamente esgoto sanitário e águas pluviais</td></tr>
+<tr><td>Sistema separador absoluto</td><td>Coleta exclusivamente esgoto sanitário</td></tr>
+</table>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha</span>
+  Muita gente confunde: <strong>recursos hídricos NÃO integram</strong> os serviços públicos de saneamento básico (art. 4º). A água bruta captada de um rio, por exemplo, está sujeita a outorga de direito de uso nos termos da Lei nº 9.433/1997 — é regime jurídico distinto do saneamento.
+</div>
+
+<h2 id="componentes">4. Os quatro componentes do saneamento básico</h2>
+<p>O art. 3º, I, alíneas "a" a "d", detalha os quatro componentes que formam o conceito de saneamento básico:</p>
+<table>
+<tr><th>Componente</th><th>Abrangência (desde/até)</th></tr>
+<tr><td><strong>a) Abastecimento de água potável</strong></td><td>Da captação até as ligações prediais e seus instrumentos de medição</td></tr>
+<tr><td><strong>b) Esgotamento sanitário</strong></td><td>Das ligações prediais até a destinação final (produção de água de reúso ou lançamento adequado no meio ambiente)</td></tr>
+<tr><td><strong>c) Limpeza urbana e manejo de resíduos sólidos</strong></td><td>Coleta, varrição, transporte, transbordo, tratamento e destinação final ambientalmente adequada dos resíduos domiciliares e de limpeza urbana</td></tr>
+<tr><td><strong>d) Drenagem e manejo das águas pluviais urbanas</strong></td><td>Drenagem, transporte, detenção/retenção para amortecimento de cheias, tratamento e disposição final, incluindo limpeza e fiscalização preventiva das redes</td></tr>
+</table>
+
+<div class="dica">
+  <span class="rotulo">Dica de memorização</span>
+  Os artigos 3º-A, 3º-B, 3º-C e 3º-D (todos incluídos em 2020) detalham as atividades específicas de cada componente, na mesma ordem: água (3º-A), esgoto (3º-B), limpeza urbana/resíduos (3º-C) e águas pluviais (3º-D). Associe a letra do artigo à posição do componente na alínea correspondente do art. 3º, I.
+</div>
+
+<h2 id="titularidade">5. Titularidade dos serviços (arts. 8º a 9º)</h2>
+<p>Exercem a titularidade dos serviços públicos de saneamento básico (art. 8º, redação de 2020):</p>
+<ul>
+  <li><strong>Municípios e Distrito Federal</strong> — no caso de <strong>interesse local</strong>;</li>
+  <li><strong>Estado, em conjunto com os Municípios</strong> que compartilham efetivamente instalações operacionais de regiões metropolitanas, aglomerações urbanas e microrregiões instituídas por lei complementar estadual — no caso de <strong>interesse comum</strong>.</li>
+</ul>
+<p>O exercício da titularidade também pode se dar por <strong>gestão associada</strong> (consórcio público ou convênio de cooperação, art. 241 da CF).</p>
+<p>Compete ao titular (art. 9º): elaborar os planos de saneamento básico; prestar diretamente os serviços ou concedê-los, definindo a entidade reguladora; fixar parâmetros de atendimento essencial à saúde pública; estabelecer direitos e deveres dos usuários; implementar sistema de informações (Sinisa/Sinir/Singreh); e intervir e retomar a operação dos serviços delegados quando indicado pela entidade reguladora.</p>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha</span>
+  A definição da entidade responsável pela regulação e fiscalização é <strong>obrigatória</strong>, independentemente da modalidade de prestação (direta ou delegada) — art. 8º, §5º.
+</div>
+
+<h2 id="regionalizada">6. Prestação regionalizada (Capítulo III)</h2>
+<p>Os antigos arts. 14, 15 e 16 (que tratavam de gestão associada de forma mais restrita) foram <strong>revogados</strong> pela Lei 14.026/2020. A prestação regionalizada, hoje, pode ocorrer em três formatos (art. 3º, VI):</p>
+<table>
+<tr><th>Modalidade</th><th>Como se institui</th></tr>
+<tr><td>Região metropolitana, aglomeração urbana ou microrregião</td><td>Lei complementar estadual (art. 25, §3º, CF), Municípios limítrofes, nos termos do Estatuto da Metrópole (Lei 13.089/2015)</td></tr>
+<tr><td>Unidade regional de saneamento básico</td><td>Lei ordinária estadual; Municípios não necessariamente limítrofes</td></tr>
+<tr><td>Bloco de referência</td><td>Instituído pela União; gestão associada voluntária dos titulares</td></tr>
+</table>
+<p>A adesão dos titulares de interesse local às estruturas de prestação regionalizada é <strong>facultativa</strong> (art. 8º-A). Já na prestação regionalizada, as responsabilidades administrativa, civil e penal recaem <strong>exclusivamente sobre os titulares</strong> (art. 8º-B).</p>
+
+<h2 id="contratos">7. Contratos e condições de validade (arts. 10 a 12)</h2>
+<p>A prestação por entidade que não integre a administração do titular depende de <strong>contrato de concessão, mediante prévia licitação</strong> (art. 175, CF), sendo <strong>vedada</strong> a disciplina por contrato de programa, convênio, termo de parceria ou outro instrumento de natureza precária (art. 10, redação de 2020).</p>
+
+<div class="caixa-resumo">
+<strong>Condições de validade dos contratos (art. 11)</strong>
+<ol>
+  <li>Existência de plano de saneamento básico;</li>
+  <li>Estudo de viabilidade técnica e econômico-financeira;</li>
+  <li>Normas de regulação, com designação da entidade reguladora;</li>
+  <li>Prévia audiência e consulta pública sobre o edital/minuta contratual;</li>
+  <li>Existência de metas e cronograma de universalização <em>(inciso V, incluído em 2020)</em>.</li>
+</ol>
+</div>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha</span>
+  Os "contratos de programa" (delegação sem licitação, típicos de empresas estatais estaduais) foram <strong>vedados para novas delegações</strong> a partir da Lei 14.026/2020 — mas os contratos de programa <strong>regulares já vigentes permanecem válidos até o termo contratual</strong> (art. 10, §3º). Não houve extinção retroativa.
+</div>
+
+<h2 id="planejamento">8. Planejamento (Capítulo IV, arts. 19 a 20)</h2>
+<p>A prestação observará <strong>plano de saneamento básico</strong> (que pode ser específico por serviço), contendo no mínimo:</p>
+<ol>
+  <li>Diagnóstico da situação e impactos nas condições de vida;</li>
+  <li>Objetivos e metas de curto, médio e longo prazos para universalização;</li>
+  <li>Programas, projetos e ações compatíveis com planos plurianuais;</li>
+  <li>Ações para emergências e contingências;</li>
+  <li>Mecanismos de avaliação sistemática da eficiência e eficácia.</li>
+</ol>
+<table>
+<tr><th>Regra</th><th>Detalhe</th></tr>
+<tr><td>Revisão periódica</td><td>Prazo não superior a <strong>10 anos</strong> (art. 19, §4º)</td></tr>
+<tr><td>Planos simplificados</td><td>Municípios com <strong>menos de 20.000 habitantes</strong> (art. 19, §9º)</td></tr>
+<tr><td>Plano regional</td><td>Dispensa a elaboração de planos municipais quando existente (art. 17, §3º)</td></tr>
+</table>
+
+<h2 id="regulacao">9. Regulação (Capítulo V, arts. 21 a 26)</h2>
+<p>A função de regulação é desempenhada por entidade de <strong>natureza autárquica</strong>, dotada de independência decisória e autonomia administrativa, orçamentária e financeira, observando os princípios de <strong>transparência, tecnicidade, celeridade e objetividade</strong> das decisões (art. 21).</p>
+<p><strong>Objetivos da regulação (art. 22):</strong> estabelecer padrões e normas para a adequada prestação; garantir cumprimento de metas contratuais; prevenir e reprimir abuso do poder econômico; definir tarifas que assegurem equilíbrio econômico-financeiro e modicidade tarifária.</p>
+<p>Desde 2020, a <strong>ANA (Agência Nacional de Águas e Saneamento Básico)</strong> passou a instituir <strong>normas de referência</strong> para a regulação, que as entidades reguladoras estaduais/municipais devem observar (art. 25-A). O titular pode aderir a agência reguladora de outro Estado sob condições específicas (art. 23, §1º-A).</p>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha</span>
+  A entidade reguladora tem natureza <strong>autárquica</strong> — não pode ser um simples órgão da administração direta sem autonomia. Cuidado com alternativas que descrevem regulação exercida diretamente pela Secretaria Municipal, sem personalidade jurídica própria.
+</div>
+
+<h2 id="economicos">10. Aspectos econômicos e tarifários (Capítulo VI, arts. 29 a 42)</h2>
+<p>A sustentabilidade econômico-financeira é assegurada por <strong>remuneração pela cobrança dos serviços</strong> e, quando necessário, por subsídios/subvenções, sendo <strong>vedada a cobrança em duplicidade</strong> de custos administrativos (art. 29).</p>
+<table>
+<tr><th>Serviço</th><th>Forma de cobrança</th></tr>
+<tr><td>Água e esgoto</td><td>Taxas, tarifas e outros preços públicos</td></tr>
+<tr><td>Limpeza urbana e resíduos sólidos</td><td>Taxas, tarifas e outros preços públicos</td></tr>
+<tr><td>Drenagem e manejo de águas pluviais</td><td>Tributos (inclusive taxas) ou tarifas e outros preços públicos</td></tr>
+</table>
+<p><strong>Reajustes tarifários:</strong> intervalo mínimo de <strong>12 meses</strong> (art. 37). <strong>Revisões tarifárias</strong> podem ser periódicas (distribuição de ganhos de produtividade) ou extraordinárias (fatos supervenientes fora do controle do prestador que alterem o equilíbrio econômico-financeiro) — art. 38.</p>
+<p><strong>Interrupção dos serviços</strong> (art. 40): admitida em situações de emergência, necessidade de reparos, recusa do usuário em permitir instalação de hidrômetro, manipulação indevida de instalações, e <strong>inadimplemento</strong> — neste último caso, com aviso prévio de no mínimo <strong>30 dias</strong> e preservação das condições mínimas de saúde em caso de esgoto.</p>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha</span>
+  A interrupção por inadimplência <strong>não pode</strong> ocorrer sem aviso prévio de 30 dias (art. 40, §2º), e há proteção especial para estabelecimentos de saúde, instituições educacionais/de internação coletiva e usuários de baixa renda com tarifa social (art. 40, §3º).
+</div>
+
+<h2 id="tecnicos">11. Aspectos técnicos (Capítulo VII, arts. 43 a 46)</h2>
+<ul>
+  <li>A <strong>União</strong> define os parâmetros mínimos de <strong>potabilidade da água</strong> (art. 43, §1º);</li>
+  <li>Edificações permanentes urbanas devem ser <strong>conectadas às redes públicas</strong> disponíveis de água e esgoto (art. 45);</li>
+  <li>Na ausência de rede pública, admitem-se <strong>soluções individuais</strong> (art. 45, §1º);</li>
+  <li>Prazo de até <strong>1 ano</strong> para que usuários se conectem à rede de esgoto disponível, sob pena de conexão compulsória com cobrança (art. 45, §6º);</li>
+  <li>Substituição progressiva do <strong>sistema unitário</strong> pelo <strong>sistema separador absoluto</strong>, com tratamento obrigatório em períodos de estiagem durante a transição (art. 44, §3º).</li>
+</ul>
+
+<h2 id="federal">12. Política Federal de Saneamento Básico (Capítulo IX, arts. 48 a 53)</h2>
+<p>Instrumentos de destaque:</p>
+<table>
+<tr><th>Instrumento</th><th>Função</th></tr>
+<tr><td>Plano Nacional de Saneamento Básico</td><td>Elaborado pela União (coordenação do Ministério das Cidades); horizonte de <strong>20 anos</strong>, avaliado anualmente e revisado a cada <strong>4 anos</strong></td></tr>
+<tr><td>Sinisa (Sistema Nacional de Informações em Saneamento Básico)</td><td>Coleta e sistematiza dados sobre a prestação dos serviços; informações públicas, gratuitas e em dados abertos</td></tr>
+<tr><td>Cisb (Comitê Interministerial de Saneamento Básico)</td><td>Assegura a implementação da política federal e articula a alocação de recursos entre órgãos federais</td></tr>
+</table>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha</span>
+  Não confundir <strong>Sinisa</strong> (saneamento básico) com <strong>Sinir</strong> (resíduos sólidos, da PNRS — Lei 12.305/2010) e <strong>Singreh</strong> (recursos hídricos, da Lei 9.433/1997). A Lei 11.445/2007 exige que o titular articule seu sistema de informações com os três.
+</div>
+
+<h2 id="metas">13. Metas de universalização (art. 11-B)</h2>
+<div class="caixa-resumo">
+  <strong>Meta legal (art. 11-B, caput):</strong> os contratos devem garantir o atendimento de <strong>99% da população com água potável</strong> e <strong>90% da população com coleta e tratamento de esgotos</strong> até <strong>31 de dezembro de 2033</strong>.
+</div>
+<ul>
+  <li>Contratos vigentes sem essas metas tiveram até <strong>31/03/2022</strong> para viabilizar sua inclusão (art. 11-B, §1º);</li>
+  <li>Quando inviável economicamente mesmo após regionalização, admite-se dilação de prazo, desde que <strong>não ultrapasse 1º de janeiro de 2040</strong>, com anuência da agência reguladora (art. 11-B, §9º);</li>
+  <li>O cumprimento é verificado <strong>anualmente</strong> pela agência reguladora, considerando os últimos <strong>5 anos</strong>, dos quais as metas devem ter sido cumpridas em pelo menos <strong>3</strong> — a primeira fiscalização só ocorre ao término do <strong>5º ano</strong> de vigência do contrato (art. 11-B, §5º).</li>
+</ul>
+
+<div class="pegadinha">
+  <span class="rotulo">Pegadinha numérica (memorize com atenção)</span>
+  <strong>99%</strong> água / <strong>90%</strong> esgoto / até <strong>2033</strong> / prorrogação limite <strong>2040</strong> / comprovação de capacidade econômico-financeira / subdelegação limitada a <strong>25%</strong> do valor do contrato (art. 11-A) / conexão compulsória em até <strong>1 ano</strong> (art. 45, §6º) / verificação das metas até <strong>31/12/2025</strong> para edificações já implantadas (art. 45, §7º).
+</div>
+
+<h2 id="pegadinhas">14. Quadro-resumo de pegadinhas mais cobradas</h2>
+<table>
+<tr><th>Afirmação incorreta comum</th><th>Correção</th></tr>
+<tr><td>"A Lei 14.026/2020 revogou a Lei 11.445/2007"</td><td>Falso — apenas alterou/atualizou dispositivos, revogando artigos pontuais (14, 15, 16, entre outros)</td></tr>
+<tr><td>"Recursos hídricos integram o saneamento básico"</td><td>Falso — art. 4º os exclui expressamente</td></tr>
+<tr><td>"Contratos de programa continuam sendo permitidos para novas delegações"</td><td>Falso — vedados desde 2020; os regulares já vigentes permanecem até o termo</td></tr>
+<tr><td>"A meta de universalização é 100% para água e esgoto"</td><td>Falso — 99% água / 90% esgoto, até 2033 (prorrogável até 2040)</td></tr>
+<tr><td>"O plano de saneamento deve ser revisto a cada 4 anos"</td><td>Falso — plano de saneamento: até 10 anos; Plano Nacional: revisado a cada 4 anos</td></tr>
+<tr><td>"Qualquer Município pode reter titularidade mesmo em regiões metropolitanas"</td><td>Falso — em caso de interesse comum, a titularidade é compartilhada entre Estado e Municípios (art. 8º, II)</td></tr>
+<tr><td>"A interrupção por inadimplência pode ocorrer sem aviso prévio"</td><td>Falso — exige aviso de no mínimo 30 dias (art. 40, §2º)</td></tr>
+</table>
+
+<h2 id="questoes">15. Questões de fixação (estilo AOCP)</h2>
+<div class="questoes">
+
+<div class="questao">
+  <p class="enunciado">1. Segundo a Lei nº 11.445/2007, é correto afirmar que a Lei nº 14.026/2020: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Revogou integralmente a Lei nº 11.445/2007.</li>
+    <li>Atualizou o Marco Legal do Saneamento Básico, sem revogar a Lei nº 11.445/2007 como um todo.</li>
+    <li>Criou uma nova lei totalmente independente da de 2007.</li>
+    <li>Aplica-se apenas aos Estados, não aos Municípios.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: B.</strong> A Lei nº 14.026/2020 alterou substancialmente a Lei nº 11.445/2007, revogando dispositivos pontuais, mas manteve a Lei de 2007 como marco vigente.</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">2. Constituem princípios fundamentais dos serviços públicos de saneamento básico, incluídos pela Lei nº 14.026/2020, EXCETO: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Prestação regionalizada dos serviços.</li>
+    <li>Seleção competitiva do prestador dos serviços.</li>
+    <li>Prestação concomitante dos serviços de água e esgotamento sanitário.</li>
+    <li>Controle social.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: D.</strong> Controle social é princípio original da Lei de 2007 (art. 2º, X). Os demais (incisos XIV, XV e XVI) foram incluídos em 2020.</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">3. Nos termos do art. 4º da Lei nº 11.445/2007, os recursos hídricos: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Integram os serviços públicos de saneamento básico como componente autônomo.</li>
+    <li>Não integram os serviços públicos de saneamento básico.</li>
+    <li>Somente integram o saneamento básico quando destinados à irrigação.</li>
+    <li>Integram o saneamento básico apenas nas regiões metropolitanas.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: B.</strong> O art. 4º é expresso: "os recursos hídricos não integram os serviços públicos de saneamento básico". Sua utilização está sujeita a outorga, nos termos da Lei nº 9.433/1997.</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">4. A prestação de serviços públicos de saneamento básico por entidade que não integre a administração do titular depende de: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Convênio de cooperação, independentemente de licitação.</li>
+    <li>Termo de parceria, dispensada a licitação em qualquer hipótese.</li>
+    <li>Contrato de concessão, mediante prévia licitação.</li>
+    <li>Simples autorização administrativa do titular.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: C.</strong> Art. 10, caput, com redação de 2020: exige contrato de concessão precedido de licitação, vedados convênios, termos de parceria ou instrumentos precários.</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">5. São condições de validade dos contratos que tenham por objeto a prestação de serviços públicos de saneamento básico, EXCETO: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Existência de plano de saneamento básico.</li>
+    <li>Existência de estudo de viabilidade técnica e econômico-financeira.</li>
+    <li>Realização prévia de audiência e consulta públicas.</li>
+    <li>Aprovação prévia pelo Congresso Nacional.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: D.</strong> Não há exigência de aprovação pelo Congresso Nacional. As demais alternativas correspondem aos incisos I, II e IV do art. 11.</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">6. De acordo com o art. 11-B da Lei nº 11.445/2007, os contratos de prestação dos serviços públicos de saneamento básico deverão definir metas de universalização que garantam, até 31 de dezembro de 2033: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>100% da população com água potável e 100% com coleta e tratamento de esgotos.</li>
+    <li>99% da população com água potável e 90% com coleta e tratamento de esgotos.</li>
+    <li>90% da população com água potável e 99% com coleta e tratamento de esgotos.</li>
+    <li>95% da população com água potável e 95% com coleta e tratamento de esgotos.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: B.</strong> Números exatos do art. 11-B, caput: 99% água / 90% esgoto até 31/12/2033.</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">7. Compete à entidade reguladora dos serviços de saneamento básico, entre outros objetivos: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Definir tarifas que assegurem apenas o lucro máximo do prestador.</li>
+    <li>Prevenir e reprimir o abuso do poder econômico, ressalvada a competência do Sistema Brasileiro de Defesa da Concorrência.</li>
+    <li>Substituir o titular na elaboração do plano de saneamento básico.</li>
+    <li>Fixar exclusivamente metas de curtíssimo prazo.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: B.</strong> Art. 22, III: a regulação previne e reprime abuso de poder econômico, sem prejuízo da competência dos órgãos do CADE.</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">8. Os serviços públicos de saneamento básico poderão ser interrompidos pelo prestador em caso de inadimplemento do usuário, desde que: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Seja imediata, sem necessidade de aviso prévio.</li>
+    <li>Haja prévio aviso não inferior a 30 dias, preservadas condições mínimas de saúde em caso de esgotamento sanitário.</li>
+    <li>Ocorra apenas mediante decisão judicial.</li>
+    <li>O usuário seja necessariamente notificado por edital em jornal de grande circulação.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: B.</strong> Art. 40, V c/c §2º: aviso prévio de no mínimo 30 dias; a interrupção do esgotamento sanitário deve preservar condições mínimas de saúde dos usuários.</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">9. O Sistema Nacional de Informações em Saneamento Básico (Sinisa) tem, entre seus objetivos: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Substituir a atuação das agências reguladoras estaduais.</li>
+    <li>Coletar e sistematizar dados relativos às condições da prestação dos serviços públicos de saneamento básico.</li>
+    <li>Fixar tarifas de forma centralizada para todos os Municípios.</li>
+    <li>Aprovar previamente todos os planos municipais de saneamento.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: B.</strong> Art. 53, I. As informações do Sinisa são públicas, gratuitas e devem ser publicadas em formato de dados abertos (art. 53, §1º).</p>
+  </details>
+</div>
+
+<div class="questao">
+  <p class="enunciado">10. Segundo o art. 8º da Lei nº 11.445/2007, no caso de interesse comum, exerce a titularidade dos serviços públicos de saneamento básico: <span class="banca-tag">AOCP</span></p>
+  <ol class="alternativas">
+    <li>Exclusivamente a União.</li>
+    <li>Exclusivamente o Município sede da região metropolitana.</li>
+    <li>O Estado, em conjunto com os Municípios que compartilham efetivamente instalações operacionais integrantes de regiões metropolitanas, aglomerações urbanas e microrregiões.</li>
+    <li>Exclusivamente a entidade reguladora estadual.</li>
+  </ol>
+  <details class="gabarito"><summary>Ver gabarito e comentário</summary>
+  <p><strong>Gabarito: C.</strong> Art. 8º, II — titularidade compartilhada Estado/Municípios em caso de interesse comum, mediante lei complementar estadual.</p>
+  </details>
+</div>
+
+</div>
+
+<div class="rodape">
+  Guia elaborado com base no texto compilado da Lei nº 11.445/2007 (Planalto), consolidando as alterações da Lei nº 14.026/2020 e leis posteriores até 2025. Recomenda-se conferir eventuais atualizações supervenientes junto ao texto oficial (planalto.gov.br) antes da prova.
+</div>
+
+</body>
+</html>
